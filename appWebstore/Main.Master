@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="appWebstore.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title></title>
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="Script1" runat="server"></asp:ScriptManager>
+        <div style="padding: 8px 32px">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: left; width: 124px">
+                        <asp:HyperLink ID="mu1" CssClass="buttonnav" runat="server" NavigateUrl="~/customer/managecustomer.aspx">Customer</asp:HyperLink>
+                    </td>
+                    <td style="text-align: left; width: 124px">
+                        <asp:HyperLink ID="HyperLink1" CssClass="buttonnav" runat="server" NavigateUrl="~/customer/selectcustomer.aspx" >New Sale</asp:HyperLink></td>
+                    <td style="text-align: left; width: 124px">
+                        <asp:HyperLink ID="HyperLink2" CssClass="buttonnav" runat="server" NavigateUrl="~/Sales/salesorder.aspx" >Sales List</asp:HyperLink></td>
+                    <td style="text-align: left; width: 124px">
+                        <asp:HyperLink ID="mu2" CssClass="buttonnav" runat="server" NavigateUrl="~/Product/manageproducts.aspx" >Products</asp:HyperLink></td>
+                    <td style="text-align: left; width: 124px">
+                        <asp:HyperLink ID="mu3" CssClass="buttonnav" runat="server" NavigateUrl="~/customer/customerlist.aspx" >Customer List</asp:HyperLink></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="cph1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+    </form>
+</body>
+</html>
